@@ -2,7 +2,7 @@
 
 Part of Lab 6 for COMS3157 (Advanced Programming) class at Columbia University in the City of New York.
 
-This command-line program operates a TCP/IP server and allows users to serve files from a specified root directory to HTTP clients. The server can handle multiple client requests simultaneously, allowing it to be robust against a malicious client from opening a connection and never closing it.
+This command-line program operates a TCP/IP server and allows users to serve files from a specified root directory to HTTP clients. The server is robust against client failure and can handle multiple client requests simultaneously, preventing malicious clients from stalling the program by opening a connection and never closing it.
 
 The program is written in C and utlilizes Socket Programming and UNIX file descriptors in addition to C-standard file pointers. To showcase its features, an example html file `index.html` is provided along with two images.
 
